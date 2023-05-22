@@ -391,6 +391,12 @@
                     Best match
                   </label>
                 </div>
+                <div class="form-check debug-hidden">
+                  <input class="form-check-input" type="checkbox" value="ecmwf_ifs" id="ecmwf_ifs" name="models">
+                  <label class="form-check-label" for="ecmwf_ifs">
+                    ECMWF IFS <span class="text-muted">(9 km, Global)</span>
+                  </label>
+                </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="era5" id="era5" name="models">
                   <label class="form-check-label" for="era5">
@@ -407,12 +413,6 @@
                   <input class="form-check-input" type="checkbox" value="cerra" id="cerra" name="models">
                   <label class="form-check-label" for="cerra">
                     CERRA <span class="text-muted">(5 km, Europe)</span>
-                  </label>
-                </div>
-                <div class="form-check debug-hidden">
-                  <input class="form-check-input" type="checkbox" value="ecmwf_ifs" id="ecmwf_ifs" name="models">
-                  <label class="form-check-label" for="ecmwf_ifs">
-                    ECMWF IFS <span class="text-muted">(9 km, Global)</span>
                   </label>
                 </div>
               </div>
@@ -718,7 +718,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">Reanalysis Model</th>
+          <th scope="col">Data Source</th>
           <th scope="col">Region</th>
           <th scope="col">Spatial Resolution</th>
           <th scope="col">Temporal Resolution</th>
@@ -727,6 +727,16 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <th scope="row"><a
+              href="https://www.ecmwf.int/en/forecasts/documentation-and-support/changes-ecmwf-model">ECMWF IFS</a>
+          </th>
+          <td>Global</td>
+          <td>9 km</td>
+          <td>Hourly</td>
+          <td>2017 to present</td>
+          <td>Daily with 1 day delay</td>
+        </tr>
         <tr>
           <th scope="row"><a
               href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview">ERA5</a>
